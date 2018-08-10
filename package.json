@@ -1,5 +1,5 @@
 {
-  "name": "text-to-svg",
+  "name": "text-to-svg-ui",
   "version": "1.0.0",
   "description": "UI for turning text into svg paths",
   "main": "index.js",
@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/brysonandrew/text-to-svg#readme",
   "dependencies": {
-    "express": "^4.16.3"
+    "express": "^4.16.3",
+    "text-to-svg": "^3.1.3"
   }
 }
