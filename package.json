@@ -1,0 +1,27 @@
+{
+  "name": "text-to-svg",
+  "version": "1.0.0",
+  "description": "UI for turning text into svg paths",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brysonandrew/text-to-svg.git"
+  },
+  "keywords": [
+    "text",
+    "svg",
+    "ui"
+  ],
+  "author": "Andrew <kozmcode@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brysonandrew/text-to-svg/issues"
+  },
+  "homepage": "https://github.com/brysonandrew/text-to-svg#readme",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
