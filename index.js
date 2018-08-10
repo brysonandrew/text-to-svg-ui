@@ -4,17 +4,18 @@ const app = express();
 const PORT = 3000;
 
 const TextToSVG = require('text-to-svg');
-const textToSVG = TextToSVG.loadSync();
 
-const attributes = {fill: 'red', stroke: 'black'};
+const attributes = {fill: 'black'};
 const options = {x: 0, y: 0, fontSize: 72, anchor: 'top', attributes: attributes};
 
-const svg = textToSVG.getSVG('hello', options);
-
-console.log(svg);
 
 app.get('/', (req, res) => {
-  res.send(svg)
+  // First argument is URL on web browsers, but it is file path on Node.js.
+  TextToSVG.load('./fonts/Enchanted Land.otf', function(err, textToSVG) {
+    const svg = textToSVG.getSVG('Lion Tongue', options);
+    console.log(svg);
+    res.send(svg);
+  });
 });
 
 app.listen(PORT, () => {
